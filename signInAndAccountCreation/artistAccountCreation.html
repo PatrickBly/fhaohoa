@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Account Creation</title>
+    <script src="/signInAndAccountCreation/signIntoSite.js" type="text/javascript"></script>
+    <link href="/universal.css" rel="stylesheet">
+    <link href="/signInAndAccountCreation/artistAccountCreation.css" rel="stylesheet">
+</head>
+<body>
+    <form action="./" method="post" id="artistAccCreationForm">
+        <div id="creationLabel">
+            <h1 id="createYourAccountLabel">Create Your Account</h1>
+            <a onclick="window.location.href='signInPage.html'" id="sendToSignIn"><h3 style="text-align: center;">Already Have One?</h3></a>
+        </div>
+        <h2 id="artistCapabilitiesDescription">As an artist, you will be able to publish music for users to listen to and add to their playlists. You will be able to upload audio and provide thumbnails to make your music stand out to the user before they even listen to it.</h2>
+        <Label id="usernameLabel">Username</Label>
+        <input class="textInputs" id="usernameInputs" name="usernameInputs" type="text" maxlength="15" class="createAccountUsername">
+        <Label id="emailLabel">Email</Label>
+        <input class="textInputs" id="emailInputs" name='emailInputs' type="email" maxlength="25">
+        <Label id="passwordLabel">Password</Label>
+        <input class="textInputs" id="passwordInputs" type="text" minlength="5" maxlength="15" name="passwordInputs">
+        <input onclick="signUp()" type='submit' id='createProfileButton' value="Create Account">
+    </form>
+</body>
+</html>

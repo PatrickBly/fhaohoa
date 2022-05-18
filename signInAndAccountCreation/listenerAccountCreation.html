@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listener Account Creation</title>
+    <script src="/signInAndAccountCreation/signIntoSite.js" type="text/javascript"></script>
+    <link href="/universal.css" rel="stylesheet">
+    <link href="/signInAndAccountCreation/listenerAccountCreation.css" rel="stylesheet">
+</head>
+<body>
+    <form action="./" method="post" id="createUserAccountForm">
+        <div id="creationLabel">
+            <h1>Create Your Account As A Listener</h1>
+            <br>
+            <a onclick="window.location.href='signInPage.html'"><h3 style="text-align: center;">Already Have One?</h3></a>
+            <br>
+        </div>
+        <h2 id="listenerCapabilitiesDescription">As a listener, you will be able to add songs, that Artists upload, to a playlist of unlimited length. You will have a profile page which includes a profile picture and a customizable theme song which will play everytime you are on the page.</h2>
+        <Label id="usernameLabel">Username</Label>
+        <input class="textInputs" id="usernameInputs" type="text" name="listenerUsernameInputs" maxlength="15">
+        <Label id="emailLabel">Email</Label>
+        <input class="textInputs" id="emailInputs" name="listenerEmailInputs" type="email" name="createListenerEmail" maxlength="25">
+        <Label id="passwordLabel">Password</Label>
+        <input class="textInputs" id="passwordInputs" type="text" name="listenerPasswordInputs" length="5" maxlength="15">
+        <input onclick="signUp()" type="submit" value="Create Account" id="createProfileButton">
+    </form>
+</body>
+</html>

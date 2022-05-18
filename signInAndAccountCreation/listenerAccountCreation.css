@@ -1,0 +1,53 @@
+#createUserAccountForm{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'creationLabel creationLabel .'
+    'usernameLabel usernameInputs listenerCapabilities'
+    'emailLabel emailInputs listenerCapabilities'
+    'passwordLabel passwordInputs listenerCapabilities'
+    'createProfileButton createProfileButton .';
+}
+label{
+    font-size: 130%;
+}
+.textInputs{
+    box-shadow: 0 0 2px 2px rgb(233, 81, 162);
+}
+#creationLabel{
+    grid-area: creationLabel;
+}
+#usernameLabel{
+    grid-area: usernameLabel;
+}
+#usernameInputs{
+    grid-area: usernameInputs;
+}
+#emailLabel{
+    grid-area: emailLabel;
+}
+#emailInputs{
+    grid-area: emailInputs;
+}
+#passwordLabel{
+    grid-area: passwordLabel;
+}
+#passwordInputs{
+    grid-area: passwordInputs;
+}
+#createProfileButton{
+    grid-area: createProfileButton;
+    font-size: 95%;
+    margin: auto;
+    width: 15%;
+    height: 20%;
+    box-shadow: 0 0 2px 2px rgb(233, 81, 162);
+}
+#listenerCapabilitiesDescription{
+    grid-area: listenerCapabilities;
+    margin: auto;
+    margin-right: 5%;
+}

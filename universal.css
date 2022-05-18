@@ -1,0 +1,12 @@
+*{
+    background-color: black;
+    color: rgb(110, 250, 255);
+    margin: 0px;
+    text-shadow: 1px 1px rgb(233, 81, 162)
+}
+body{
+    text-align: center;
+}
+button{
+    box-shadow: 0 0 2px 2px rgb(233, 81, 162);
+}

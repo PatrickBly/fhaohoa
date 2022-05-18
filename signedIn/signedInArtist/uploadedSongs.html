@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload A Song</title>
+    <script src="/signedIn/signedIn.js" type="text/javascript" async defer></script>
+    <link href="/signedIn/signedInArtist/uploadedSongs.css" rel="stylesheet">
+</head>
+<body>
+    <div id="topGrid">
+        <button onclick="window.location.href='/signInAndAccountCreation/signInPage.html'" class="signOutButton"><h2>Sign Out</h2></button>
+        <button onclick="window.location.href='/signedIn/songSearchFolder/songSearchTab.html'" class="navigationButtons searchNavigationButton"><h2>Search</h2></button>
+        <button onclick="window.location.href='/signedIn/homePageFolder/yourHomePage.html'" class="navigationButtons homeNavigationButton"><h2>Home</h2></button>
+        <button onclick="window.location.href='/signedIn/userSongsFolder/userSongsPage.html'" class="navigationButtons yourSongsNavigationButton"><h2>Your Songs</h2></button>
+        <button onclick="window.location.href='/signIn/userProfileFolder/userProfileTab.html'" class="navigationButtons profileNavigation"></button>
+    </div>
+    <hr style="border:1px rgb(233, 81, 162) solid; background-color:rgb(233, 81, 162); height: 2px;">
+    <form action="./" method="post" id="uploadNewSongForm">
+        <h2 id="addSongsLabel">Upload Songs</h2>
+        <input type="file" id="songUploadButton" onchange="songChosen()" accept="audio/*">
+        <h2 id="chooseThumbnailLabel">Choose a thumbnail</h2>
+        <input id='uploadingSongThumbnail' type="file" accept=".jpg">
+        <input id="uploadSong" type="submit" onclick="uploadSong()" name="newSongForm" value="submit new song">
+    </form>
+</body>
+</html>

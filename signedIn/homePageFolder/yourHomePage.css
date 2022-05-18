@@ -1,0 +1,96 @@
+*{
+    background-color: black;
+    color: rgb(110, 250, 255);
+    margin: 0px; 
+    text-shadow: 2px 1px rgb(233, 81, 162)
+}
+#homeGridContainer{
+    display: grid;
+    grid-auto-rows: .35fr .15fr 1fr 1fr 1fr 1fr 1fr .75fr .5fr;
+    grid-auto-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'signOutButton . findAllSongs yourHomePage yourSavedSongs . .'
+    '. . . . . . .'
+    'recommendedPlaylistsButtonRow1Pos1 recommendedPlaylistsButtonRow1Pos2 recommendedPlaylistsButtonRow1Pos3 recommendedPlaylistsButtonRow1Pos4 recommendedPlaylistsButtonRow1Pos5 recommendedPlaylistsButtonRow1Pos6 recommendedPlaylistsButtonRow1Pos7'
+    'recommendedPlaylistsButtonRow2Pos1 recommendedPlaylistsButtonRow2Pos2 recommendedPlaylistsButtonRow2Pos3 recommendedPlaylistsButtonRow2Pos4 recommendedPlaylistsButtonRow2Pos5 recommendedPlaylistsButtonRow2Pos6 recommendedPlaylistsButtonRow2Pos7'
+    'recommendedPlaylistsButtonRow3Pos1 recommendedPlaylistsButtonRow3Pos2 recommendedPlaylistsButtonRow3Pos3 recommendedPlaylistsButtonRow3Pos4 recommendedPlaylistsButtonRow3Pos5 recommendedPlaylistsButtonRow3Pos6 recommendedPlaylistsButtonRow3Pos7'
+    'recommendedPlaylistsButtonRow4Pos1 recommendedPlaylistsButtonRow4Pos2 recommendedPlaylistsButtonRow4Pos3 recommendedPlaylistsButtonRow4Pos4 recommendedPlaylistsButtonRow4Pos5 recommendedPlaylistsButtonRow4Pos6 recommendedPlaylistsButtonRow4Pos7'
+    '. . . userProfileImage . . .'
+    'cpPlaySongButton audioVisualizer audioVisualizer audioVisualizer audioVisualizer audioVisualizer audioVisualizer'
+    'audioVisualizerCanvas audioVisualizerCanvas audioVisualizerCanvas audioVisualizerCanvas audioVisualizerCanvas audioVisualizerCanvas audioVisualizerCanvas';
+}
+button{
+    box-shadow: 0 0 2px 2px rgb(233, 81, 162);
+}
+/* userTabs */
+.addedSongsButton{
+    width: 45px;
+    height: 30px;
+    background-color: rgb(233, 81, 162);
+}
+/* Make width = Height */
+.navigateToProfileButton{
+    border-radius: 100%;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    grid-area: userProfileImage;
+}
+#recommendedPlaylistsButtonRow1Pos1{
+    width: 1fr;
+    height: 1fr;
+    grid-area: recommendedPlaylistsButtonRow1Pos1;
+}
+#recommendedPlaylistsButtonRow1Pos2{
+    width: 1fr;
+    height: 1fr;
+    grid-area: recommendedPlaylistsButtonRow1Pos2;
+}
+#recommendedPlaylistsButtonRow1Pos3{
+    width: 1fr;
+    height: 1fr;
+    grid-area: recommendedPlaylistsButtonRow1Pos3;
+}
+#recommendedPlaylistsButtonRow1Pos4{
+    width: 1fr;
+    height: 1fr;
+    grid-area: recommendedPlaylistsButtonRow1Pos4;
+}
+#recommendedPlaylistsButtonRow1Pos5{
+    width: 1fr;
+    height: 1fr;
+    grid-area: recommendedPlaylistsButtonRow1Pos5;
+}
+#recommendedPlaylistsButtonRow1Pos6{
+    width: 1fr;
+    height: 1fr;
+    grid-area: recommendedPlaylistsButtonRow1Pos6;
+}
+#recommendedPlaylistsButtonRow1Pos7{
+    width: 1fr;
+    height: 1fr;
+    grid-area: recommendedPlaylistsButtonRow1Pos7;
+}
+/*grid for navigator buttons*/
+.searchNavigationButton{
+    grid-area: findAllSongs;
+}
+.homeNavigationButton{
+    grid-area: yourHomePage;
+}
+.yourSongsNavigationButton{
+    grid-area: yourSavedSongs;
+}
+#homeRecommendedPlaylists{
+    grid-area: recommendedPlaylistDiv;
+}
+#signOutButton{
+    grid-area: signOutButton;
+    width: 1fr; 
+    height: 1fr;
+}
+#cpPlaySongButton{
+    grid-area: cpPlaySongButton;
+    width: 1fr;
+    height: 1fr;
+}

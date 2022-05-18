@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist or Listener?</title>
+    <script src="/signInAndAccountCreation/signIntoSite.js" type="text/javascript" async defer></script>
+    <link href="/universal.css" rel="stylesheet">
+    <link href="/signInAndAccountCreation/signIntoSite.css" rel="stylesheet">
+</head>
+<body>
+    <div id="mainGrid">
+        <!--#region Sign In Label at top of page -->
+        <div id="signInLabel">
+            <h1 id="signInText">Sign In</h1>
+            <button id="showTypeOfAccButton" onclick="showTypeOfAccountCreation()"><h4>Create New Account</h4></button>
+        </div>
+        <!--#endregion Sign In Label at top of page -->
+        <!--#region Does not display on load-->
+        <div id="typeOfAccountCreationDiv">
+            <h2 id="chooseAccountTitle">What Type of Account Would You Like?</h2>
+            <button onclick="window.location.href='/signInAndAccountCreation/listenerAccountCreation.html'" class="chooseAccountTypeButton"  id="chooseListenerAccountType">Listener</button>
+            <button onclick="window.location.href='/signInAndAccountCreation/artistAccountCreation.html'" class="chooseAccountTypeButton" id="chooseArtistAccountType">Artist</button>
+        </div>
+        <!--#endregion Does not display on load-->
+        <!--#region Website Sign in form -->
+        <form method="post" action="./" id="signInForm">
+            <Label id="emailOrUserNameLabel">Email or Username</Label>
+            <input class="textInputs" type="text" name="emailOrUsername" id="emailOrUsernameSignInInputs">
+            <Label id="passwordLabel">Password</Label>
+            <input class="textInputs" type="text" name="password" id="passwordSignInInputs">
+            <input onclick="signIn()" formaction="/signedIn/homePageFolder/yourHomePage.html" type="submit" value="Sign In" id="finishSignInButton">
+        </form>
+        <!--#endregion Website Sign in form -->
+    </div>
+</body>
+</html>

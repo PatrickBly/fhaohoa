@@ -1,0 +1,54 @@
+#searchGridContainer{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-auto-rows: .25fr .05fr .4fr .05fr 1fr 1fr 1fr;
+    grid-auto-columns: .5fr 1fr 1fr 1fr 1fr 1fr .5fr;
+    grid-template-areas:
+    'signOutButton . findAllSongs yourHomePage yourSavedSongs . userProfileImage'
+    '. . . . . . .'
+    'searchBar searchBar . . . . .'
+    '. . . . . . .'
+    '. . . . . . .'
+    '. . . . . . .'
+    '. . . . . . .';
+}
+/* Make width = Height */
+.profileNavigation{
+    border-radius: 100%;
+    margin: auto;
+    width: 125px;
+    height: 125px;
+    grid-area: userProfileImage;
+}
+.recommendedPlaylistsButton{
+    width: 200px;
+    height: 200px;
+}
+/*grid for navigator buttons*/
+.searchNavigationButton{
+    grid-area: findAllSongs;
+}
+.homeNavigationButton{
+    grid-area: yourHomePage;
+}
+.yourSongsNavigationButton{
+    grid-area: yourSavedSongs;
+}
+#signOutButton{
+    grid-area: signOutButton;
+}
+#searchBar{
+    grid-area: searchBar;
+}
+.playSongButton{
+    width: 50px;
+    height: 50px;
+    background-image: url("musicStreaming/signedIn/playbutton.png");
+}
+.pauseSongButton{
+    display: none;
+}
+#cpPlaySongButton{
+    grid-area: cpPlay;
+}

@@ -1,0 +1,47 @@
+#userSongsGridContainer{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: .5fr 1fr 1fr 1fr 1fr 1fr .5fr;
+    grid-template-areas:
+    'signOutButton . findAllSongs yourHomePage yourSavedSongs uploadSongs userProfileImage';
+}
+/* Make width = Height */
+.profileNavigation{
+    border-radius: 100%;
+    margin: auto;
+    width: 125px;
+    height: 125px;
+    grid-area: userProfileImage;
+}
+/*grid for navigator buttons*/
+.searchNavigationButton{
+    grid-area: findAllSongs;
+}
+.homeNavigationButton{
+    grid-area: yourHomePage;
+}
+.yourSongsNavigationButton{
+    grid-area: yourSavedSongs;
+}
+#yourSongsLabel{
+    grid-area: yourSongsLabel;
+    text-align: left;
+    margin: 1.5%;
+}
+#signOutButton{
+    grid-area: signOutButton;
+}
+.playSongButton{
+    width: 50px;
+    height: 50px;
+    background-image: url("musicStreaming/signedIn/playbutton.png");
+}
+.pauseSongButton{
+    display: none;
+}
+#cpPlaySongButton{
+    grid-area: cpPlay;
+}
+.uploadSongsNavigationButton{
+    grid-area: uploadSongs;
+}

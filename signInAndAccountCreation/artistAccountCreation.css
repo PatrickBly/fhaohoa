@@ -1,0 +1,66 @@
+#artistAccCreationForm{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'creationLabel creationLabel .'
+    'usernameLabel usernameInputs artistCapabilities'
+    'emailLabel emailInputs artistCapabilities'
+    'passwordLabel passwordInputs artistCapabilities'
+    'createProfileButton createProfileButton .';
+}
+#creationLabel{
+    margin: auto;
+    grid-area: creationLabel;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'createAccLabel'
+    '.'
+    'sendToSignIn';
+}
+#sendToSignIn{
+    grid-area: sendToSignIn;
+}
+#createYourAccountLabel{
+    grid-area: createAccLabel;
+}
+Label{
+    margin: auto;
+}
+.textInputs{
+    margin: auto;
+    box-shadow: 0 0 2px 2px rgb(233, 81, 162) 
+}
+#usernameLabel{
+    grid-area: usernameLabel;
+}
+#usernameInputs{
+    grid-area: usernameInputs;
+}
+#emailLabel{
+    grid-area: emailLabel;
+}
+#emailInputs{
+    grid-area: emailInputs;
+}
+#passwordLabel{
+    grid-area: passwordLabel;
+}
+#passwordInputs{
+    grid-area: passwordInputs;
+}
+#createProfileButton{
+    width: 15%;
+    height: 20%;
+    grid-area: createProfileButton;
+    box-shadow: 0 0 2px 2px rgb(233, 81, 162);
+    margin: auto;
+}
+#artistCapabilitiesDescription{
+    grid-area: artistCapabilities;
+    margin: auto;
+}
